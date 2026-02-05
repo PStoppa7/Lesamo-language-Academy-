@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nthabeleng Tutor</title>
+  <meta name="description" content="Nthabeleng Tutor — practice, get feedback, and track progress" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">Nthabeleng Tutor</h1>
+      <nav role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="public/index.html">Home</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="login.html">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / WELCOME -->
+  <section class="hero" role="region" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h2 id="hero-title">Welcome to Nthabeleng Tutor</h2>
+        <p class="hero-lead">
+          Learn a little every day. Build confidence with short practice tasks, immediate feedback, and clear progress tracking.
+        </p>
+        <p class="hero-moto" aria-hidden="false">
+          "Small steps, big progress" — start now and celebrate every win.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="signup.html">Get started</a>
+          <a class="btn ghost" href="#practice">Practice now</a>
+        </div>
+      </div>
+
+      <!-- Decorative graphic (non-essential, aria-hidden) -->
+      <svg class="hero-graphic" viewBox="0 0 600 400" role="img" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0" stop-color="#ffd166" />
+            <stop offset="1" stop-color="#06d6a0" />
+          </linearGradient>
+        </defs>
+        <g fill="url(#g1)" opacity="0.95">
+          <path d="M480 20c80 0 80 120 0 120-80 0-120-80-200-80S160 120 80 120 0 20 80 20s160 40 240 0 160 0 160 0z"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <main id="main-content" role="main" class="container" tabindex="-1">
+    <section id="practice" aria-labelledby="practice-heading" class="card">
+      <h3 id="practice-heading">Short practice</h3>
+      <p id="practice-help">Small tasks with immediate, explanatory feedback help you learn faster.</p>
+
+      <form id="practice-form" novalidate>
+        <div class="form-row">
+          <label for="q-answer">Question: What is 7 × 6?</label>
+          <input id="q-answer" name="answer" type="text" inputmode="numeric" autocomplete="off" required aria-describedby="answer-help" />
+          <small id="answer-help">Type a number, e.g., 42.</small>
+        </div>
+
+        <div id="practice-feedback" role="status" aria-live="polite" class="feedback" tabindex="-1"></div>
+
+        <div class="form-actions">
+          <button type="submit" id="submit-practice" class="btn primary">Submit</button>
+          <button type="button" id="show-hint" class="btn ghost">Show hint</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="progress-heading" class="card">
+      <h3 id="progress-heading">Your progress</h3>
+      <div id="progress-summary" aria-live="polite">No activity yet.</div>
+      <div class="progress-controls">
+        <button id="sync-progress" type="button" class="btn">Sync progress to server</button>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <p>&copy; Nthabeleng Tutor</p>
+    </div>
+  </footer>
+
+  <script src="practice.js" defer></script>
+  <script src="progress.js" defer></script>
+</body>
+</html>

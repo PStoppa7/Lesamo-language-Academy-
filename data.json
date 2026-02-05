@@ -1,0 +1,261 @@
+{
+  "users": [
+    {
+      "id": 1767473937542,
+      "username": "sebogodiphenyo7@gmail.com",
+      "email": "sebogodiphenyo7@gmail.com",
+      "passwordHash": "$2b$12$RheZG33Cxhjtxmeh9bPzv.58xGrW4mIdjfIhOlMveFdd13FxhY08S",
+      "createdAt": "2026-01-03T20:58:57.542Z"
+    },
+    {
+      "id": 1767538789725,
+      "username": "Phenyo_Sebogodi",
+      "email": "sebogodiphenyo@gmail.com",
+      "passwordHash": "$2b$12$Fi5yqSKF6bT1bW1ZnX1rSucPyGBqo2SY5mCFOppcd8oWzSldtBKl2",
+      "createdAt": "2026-01-04T14:59:49.725Z"
+    }
+  ],
+  "progress": {
+    "1767473937542": [
+      {
+        "at": "2026-01-03T21:02:24.340Z",
+        "items": [
+          {
+            "question": "7x6",
+            "answer": "8",
+            "correct": false,
+            "time": 1767474142364
+          }
+        ]
+      },
+      {
+        "at": "2026-01-03T21:02:39.009Z",
+        "items": [
+          {
+            "question": "7x6",
+            "answer": "8",
+            "correct": false,
+            "time": 1767474142364
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          }
+        ]
+      }
+    ],
+    "anon": [
+      {
+        "at": "2026-01-04T14:46:12.029Z",
+        "items": [
+          {
+            "question": "7x6",
+            "answer": "8",
+            "correct": false,
+            "time": 1767474142364
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          }
+        ]
+      },
+      {
+        "at": "2026-01-04T14:46:18.979Z",
+        "items": [
+          {
+            "question": "7x6",
+            "answer": "8",
+            "correct": false,
+            "time": 1767474142364
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          }
+        ]
+      },
+      {
+        "at": "2026-01-04T14:46:20.500Z",
+        "items": [
+          {
+            "question": "7x6",
+            "answer": "8",
+            "correct": false,
+            "time": 1767474142364
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474144340
+          },
+          {
+            "question": "sync",
+            "answer": "",
+            "correct": false,
+            "time": 1767474159009
+          }
+        ]
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "id": 1767537812747,
+      "userId": 1767473937542,
+      "title": "assignment",
+      "type": "assignment",
+      "filename": "MDA Phenyo Sebogodi.pdf",
+      "storedFilename": "1767473937542_1767537812744_MDA_Phenyo_Sebogodi.pdf",
+      "filepath": "C:\\Users\\User\\Desktop\\files\\submissions\\1767473937542_1767537812744_MDA_Phenyo_Sebogodi.pdf",
+      "notes": "",
+      "submittedAt": "2026-01-04T14:43:32.747Z",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — Nthabeleng Tutor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <main id="main-content" class="container" role="main" tabindex="-1">
+    <h1>Log in</h1>
+
+    <form id="login-form" method="post" action="/login" novalidate>
+      <div class="form-row">
+        <label for="username">Username or email</label>
+        <input id="username" name="username" type="text" autocomplete="username" required />
+      </div>
+
+      <div class="form-row">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" />
+      </div>
+
+      <div id="login-error" role="alert" aria-live="assertive" class="error" hidden></div>
+
+      <div class="form-actions">
+        <button type="submit">Log in</button>
+      </div>
+      <div style="margin-top: 1rem; text-align: center;">
+        <a href="#" id="forgot-password-link" style="color: var(--accent); text-decoration: none; font-size: 0.9rem;">Forgot password?</a>
+      </div>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </main>
+
+  <script src="login.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Dashboard — Nthabeleng Tutor</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">Nthabeleng Tutor</h1>
+      <nav role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container dashboard-main" role="main">
+    <div class="dashboard-header">
+      <h1>Student Dashboard</h1>
+      <p class="welcome-text">Welcome back! Manage your assignments, track your progress, and view your results.</p>
+    </div>
+
+    <div class="dashboard-layout">
+      <!-- Sidebar Navigation -->
+      <aside class="dashboard-sidebar" role="navigation" aria-label="Dashboard navigation">
+        <nav class="sidebar-nav">
+          <button class="nav-item active" data-section="submit" aria-label="Submit Assignment">
+            <span class="nav-icon">📤</span>
+            <span class="nav-text">Submit Assignment</span>
+          </button>
+          <button class="nav-item" data-section="submissions" aria-label="My Submissions">
+            <span class="nav-icon">📋</span>
+            <span class="nav-text">My Submissions</span>
+          </button>
+          <button class="nav-item" data-section="progress" aria-label="Progress & Results">
+            <span class="nav-icon">📊</span>
+            <span class="nav-text">Progress & Results</span>
+          </button>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <div class="dashboard-content">
+        <!-- Submit Assignment Section -->
+        <section id="section-submit" class="dashboard-section active">
+          <div class="card">
+            <h2>Submit Assignment / Homework</h2>
+            <form id="submission-form" enctype="multipart/form-data">
+              <div class="form-row">
+                <label for="submission-title">Title/Assignment Name</label>
+                <input id="submission-title" name="title" type="text" required placeholder="e.g., Math Homework Chapter 5" />
+              </div>
+              <div class="form-row">
+                <label for="submission-type">Type</label>
+                <select id="submission-type" name="type" required>
+                  <option value="">Select type...</option>
+                  <option value="assignment">Assignment</option>
+                  <option value="homework">Homework</option>
+                  <option value="project">Project</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="submission-file">Upload File</label>
+                <input id="submission-file" name="file" type="file" required accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" />
+                <small>Accepted formats: PDF, DOC, DOCX, TXT, JPG, PNG (Max 10MB)</small>
+              </div>
+              <div class="form-row">
+                <label for="submission-notes">Notes (Optional)</label>
+                <textarea id="submission-notes" name="notes" rows="3" placeholder="Add any additional notes or comments..."></textarea>
+              </div>
+              <div id="submission-error" role="alert" aria-live="assertive" class="error" hidden></div>
+              <div id="submission-success" role="alert" aria-live="assertive" class="success" hidden></div>
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Submit Assignment</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- My Submissions Section -->
+        <section id="section-submissions" class="dashboard-section">
+          <div class="card">
+            <h2>My Submissions</h2>
+            <div id="submissions-list" class="submissions-container">
+              <p class="loading-text">Loading your submissions...</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Progress & Results Section -->
+        <section id="section-progress" class="dashboard-section">
+          <div class="card">
+            <h2>Progress & Results</h2>
+            <div id="progress-summary" class="progress-stats">
+              <div class="stat-card">
+                <div class="stat-value" id="total-submissions">0</div>
+                <div class="stat-label">Total Submissions</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="total-tasks">0</div>
+                <div class="stat-label">Tasks Completed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="correct-answers">0</div>
+                <div class="stat-label">Correct Answers</div>
+              </div>
+            </div>
+            
+            <h3 class="results-heading">Task Results</h3>
+            <div id="results-list" class="results-container">
+              <p class="loading-text">Loading your results...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <p>&copy; Nthabeleng Tutor</p>
+    </div>
+  </footer>
+
+  <script src="/dashboard.js" defer></script>
+</body>
+</html>
